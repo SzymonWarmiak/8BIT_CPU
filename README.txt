@@ -24,6 +24,28 @@ python Examples/asm_to_bin.py
 
 ---
 
+## Architektura Sprzętowa (Schematy)
+
+Poniżej przedstawiono schematy RTL (Register-Transfer Level) wygenerowane w Logisim Evolution. 
+
+### 1. Top-Level CPU Design
+Główny schemat procesora pokazujący przepływ danych, jednostkę sterującą, pamięci oraz system MMIO.
+![Top-Level CPU Design](img/CPU.png)
+
+### 2. Control Unit (Jednostka Sterująca)
+Hardwired Control Unit dekodująca 4-bitowy OPCODE i generująca odpowiednie sygnały sterujące.
+![Control Unit](img/CONTROL_UNIT.png)
+
+### 3. ALU (Jednostka Arytmetyczno-Logiczna)
+Wykonuje podstawowe operacje arytmetyczne i logiczne oraz generuje flagi systemowe.
+![ALU](img/ALU.png)
+
+### 4. Program Counter
+Synchroniczny licznik programu ze wsparciem dla skoków.
+![Program Counter](img/PC_COUNTER.png)
+
+---
+
 ## Architektura Systemu
 
 * Typ: 8-bit RISC, Architektura Harvard.
